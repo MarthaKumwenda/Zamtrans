@@ -1,0 +1,20 @@
+{% load static %}
+<html>
+    <head>   
+    </head>
+    <body>
+      <div class="container" style="padding:20px;">
+          <h1>Cross Country Buses </h1> 
+    {% for k in country %}
+      {{k.company}}<br>
+      {{k.route}}<br>
+      {{k.price}} <br>
+      <button>Make a booking</button>
+      <br> 
+      <br>
+      <br>
+      {% endfor %}
+
+       </div>
+    </body>
+</html>

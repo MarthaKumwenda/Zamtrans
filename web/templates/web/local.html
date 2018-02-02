@@ -3,6 +3,13 @@
     <head>   
     </head>
     <body>
-        
+      <div class="container"> 
+          <h1>Bus Routes in Lusaka</h1>
+    {% for l in local %}
+      {{l.route}}
+      {{l.price}} <br> 
+      {% endfor %}
+
+       </div>
     </body>
 </html>
